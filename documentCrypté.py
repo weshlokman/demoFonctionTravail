@@ -9,7 +9,7 @@ def chiffrer_document(nom_fichier):
     # Lire le document à chiffrer
     try:
         with open(nom_fichier, 'rb') as file:
-            document_original = file.read()
+            document_original = file.readline
     except FileNotFoundError:
         print("Le fichier spécifié n'existe pas")
         return
