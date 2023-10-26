@@ -6,7 +6,6 @@ def chiffrer_document(nom_fichier):
     cle = Fernet.generate_key()
     fernet = Fernet(cle)
     
-    # Lire le document à chiffrer
     try:
         with open(nom_fichier, 'rb') as file:
             document_original = file.readline
