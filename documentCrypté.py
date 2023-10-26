@@ -11,7 +11,7 @@ def chiffrer_document(nom_fichier):
         with open(nom_fichier, 'rb') as file:
             document_original = file.readline
     except FileNotFoundError:
-        print("Le fichier spécifié n'existe pas")
+        
         return
     
     # Chiffrer le document
